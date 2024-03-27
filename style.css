@@ -1,8 +1,12 @@
+*{
+    box-sizing: content-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 
 header {
@@ -44,15 +48,17 @@ nav ul li a:hover{
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: absolute;
-
+    padding: 10px 0;
     width: 100%;
 }
 
@@ -70,3 +76,7 @@ footer {
 
 }
 
+
+.fotosevideos, .sobre,.container, .contato{
+    min-height: 60vh;
+}
