@@ -21,7 +21,3 @@ Para visualizar o site localmente, basta abrir qualquer um dos arquivos HTML em 
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias no código ou no conteúdo.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
