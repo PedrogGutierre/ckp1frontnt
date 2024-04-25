@@ -21,6 +21,8 @@
             <li><a href="foto.html">Fotos</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="onde.html">Como chegar</a></li>
+            <li><a href="login.html">Logar</a></li>
+
         </ul>
     </nav>
 
@@ -34,12 +36,32 @@
             Telefone: (XX) XXXX-XXXX<br>
             Endereço: Rua da Vinheira, 123 - Cidade - País
         </address>
+
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
+
+    
 
 
     <footer>
         <p>&copy; 2024 Caso da Vinheira Agnello</p>
     </footer>
 </body>
+
+<script src="contato.js"></script>
 
 </html>
