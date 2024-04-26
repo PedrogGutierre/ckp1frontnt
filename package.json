@@ -1,0 +1,11 @@
+{
+  "name": "ckp1frontnt-main",
+  "version": "1.0.0",
+  "description": "Este é um projeto de website para o caso fictício da Vinheira Agnello, composto por cinco seções diferentes: Home, Sobre, Fotos, Contato e Como Chegar.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
