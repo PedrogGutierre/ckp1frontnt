@@ -55,6 +55,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   min-height: 65vh;
+  gap: 8px;
 }
 
 footer {
@@ -212,9 +213,10 @@ button, .btn{
 input[type="text"],
 input[type="password"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #7d7d7d;
   border-radius: 3px;
   font-size: 16px;
+  outline: none;
 }
 
 .back-link{
@@ -225,9 +227,7 @@ input[type="password"] {
   
 }
 
-.product-card button, .product-card .btn{
-  margin: 10px;
-}
+
 
 .product-card{
   display: flex;
@@ -253,10 +253,67 @@ input[type="password"] {
 }
 
 .product-details img{
-  width: 800px;
+  width: 600px;
 }
 
 .product-details button{
   width: 100%;
 }
 
+.cupom-container{
+  margin-bottom: 16px;
+}
+
+#total{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipes{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  padding: 20px 40px;
+  list-style-position: inside;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.comments{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.comments-container{
+  height: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+  overflow-y: auto;
+}
+
+.comments-container li{
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-style: var(--rounded);
+} 
+
+.comments-input{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+.comments-input input{
+  width: 80%;
+}
+.comments-input button{
+  flex: 1;
+}

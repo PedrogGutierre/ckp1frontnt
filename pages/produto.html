@@ -1,25 +1,36 @@
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detalhes do Produto</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Detalhes do Produto</h1>
+      <h1>Detalhes do Produto</h1>
     </header>
 
     <a href="/pages/compra.html" class="back-link btn">Voltar</a>
 
-    <div class="product-details">
+    <div class="container">
+      <div class="product-details"></div>
+
+    <div class="comments">
+        <h3>Comentários:</h3>
+
+        <ul class="comments-container"></ul>
+
+        <div class="comments-input">
+            <input type="text" placeholder="Comente aqui" id="comments-input">
+            <button id="comments-btn">Enviar</button>
+        </div>
+    </div>
 
     </div>
 
-
     <footer>
-        <p>&copy; 2024 - Vinheira Agnello</p>
+      <p>&copy; 2024 - Vinheira Agnello</p>
     </footer>
-</body>
-<script src="../scripts/getProduto.js"></script>
+  </body>
+  <script src="../scripts/getProduto.js"></script>
 </html>

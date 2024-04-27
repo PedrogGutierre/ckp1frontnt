@@ -1,42 +1,32 @@
-let carrinhoAtual = JSON.parse(localStorage.getItem("carrinho"))
-const carrinhoContainer = document.querySelector("#carrinho")
-const totalContainer = document.querySelector("#total")
-let total = 0
-
-
-
+let carrinhoAtual = JSON.parse(localStorage.getItem("carrinho"));
+const carrinhoContainer = document.querySelector("#carrinho");
+const totalContainer = document.querySelector("#total");
+let total = 0;
 
 const removerDoCarrinho = (index) => {
+  let carrinhoAtual = localStorage.getItem("carrinho");
 
+  carrinhoAtual = carrinhoAtual ? JSON.parse(carrinhoAtual) : [];
 
+  if (index >= 0 && index < carrinhoAtual.length) {
+    carrinhoAtual.splice(index, 1);
 
-    let carrinhoAtual = localStorage.getItem("carrinho");
+    localStorage.setItem("carrinho", JSON.stringify(carrinhoAtual));
 
-    carrinhoAtual = carrinhoAtual ? JSON.parse(carrinhoAtual) : [];
+    console.log("Produto removido do carrinho:", carrinhoAtual);
+  } else {
+    console.error("Índice fornecido está fora dos limites do carrinho.");
+  }
 
-    if (index >= 0 && index < carrinhoAtual.length) {
-        carrinhoAtual.splice(index, 1);
+  alert("Removido do carrinho");
 
-        localStorage.setItem("carrinho", JSON.stringify(carrinhoAtual));
-
-        console.log("Produto removido do carrinho:", carrinhoAtual);
-    } else {
-        console.error("Índice fornecido está fora dos limites do carrinho.");
-    }
-
-    alert("Removido do carrinho")
-
-    location.reload();
-
-
+  location.reload();
 };
 
-
-
 carrinhoAtual.forEach((item, i) => {
-    if (item) {
-        total += item.preco;
-        carrinhoContainer.innerHTML += `  
+  if (item) {
+    total += item.preco;
+    carrinhoContainer.innerHTML += `  
             <div class="product-card">
                 <div class="product-image">
                     <img src="../imgs/${item.img}" alt="${item.nome}">
@@ -47,12 +37,26 @@ carrinhoAtual.forEach((item, i) => {
                     <button onclick="removerDoCarrinho(${i})">Remover do carrinho</button>
                 </div>
             </div>`;
-    }
+  }
 });
 
+totalContainer.innerHTML = `Total da compra: R$${total.toFixed(2)}`;
 
-totalContainer.innerHTML = `Total da compra: R$${total.toFixed(2)}`
+const cupomBtn = document.querySelector("#cupom-btn");
+const cupomInput = document.querySelector("#cupom-input");
 
+cupomBtn.addEventListener("click", () => {
+  let cupomValue = cupomInput.value.toUpperCase();
+
+  if (cupomValue === "FIAP2024") {
+    alert("Cupom ativo!");
+
+    totalContainer.innerHTML = `<span>Subtotal da compra: R$${total.toFixed(2)}</span> 
+    <span>Total da compra: R$${(total * .9).toFixed(2)}</span>`;
+  } else {
+    alert("Cupom invalido.");
+  }
+});
 
 // - Opção de cupom de desconto. Ao digitar no campo de desconto e clicar em Aplicar:
 //     - Se o cupom for FIAP2024 o preço terá 10% de desconto

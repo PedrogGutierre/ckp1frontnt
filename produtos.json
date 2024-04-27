@@ -1,22 +1,26 @@
-[{
+[
+  {
     "img": "vinho1.jpg",
     "nome": "Pizzato Fausto Merlot",
     "desc": "Um vinho perfeito para apreciadores exigentes de sabores",
     "preco": 99.99,
-    "id": 1
+    "id": 1,
+    "comidas": ["carnes vermelhas grelhadas", "queijos curados", "massas com molho vermelho"]
   },
   {
     "img": "vinho2.jfif",
     "nome": "Lidio Carraro Grande",
     "desc": "Um Merlot de grande personalidade, que impressiona com sua complexidade aromática, combinando nuances de frutas vermelhas, especiarias e elegantes toques de madeira, proporcionando uma experiência única e memorável.",
     "preco": 129.99,
-    "id": 2
+    "id": 2,
+    "comidas": ["risotos de funghi", "carne suína assada", "queijos macios"]
   },
   {
     "img": "vinho3.png",
     "nome": "Casa Valduga Raízes",
     "desc": "Um Cabernet Sauvignon autêntico e marcante, que exala aromas de frutas maduras e notas de tabaco, revelando uma estrutura robusta e taninos firmes, ideal para momentos de contemplação e apreciação.",
     "preco": 149.99,
-    "id": 3
+    "id": 3,
+    "comidas": ["carnes vermelhas assadas", "massas com molho encorpado", "queijos maturados"]
   }
 ]
