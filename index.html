@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Caso da Vinheira Agnello - Um exemplo fictício de caso jurídico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caso da Vinheira Agnello - Um exemplo fictício de caso jurídico"
+    />
     <title>Vinheira Agnello</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="verificacao-container">
-        <div>
-            <h2>Somente maiores de idade!</h2>
-            <p>Para acessar nosso site é necessario ser maior de idade</p>
-            <button id="btnAceitar">Tenho mais de 18 anos</button>
-            <button id="btnRecusar">Não tenho mais de 18 anos</button>
-        </div>
+      <div>
+        <h2>Somente maiores de idade!</h2>
+        <p>Para acessar nosso site é necessario ser maior de idade</p>
+        <button id="btnAceitar">Tenho mais de 18 anos</button>
+        <button id="btnRecusar">Não tenho mais de 18 anos</button>
+      </div>
     </div>
 
     <header>
-        <h1>Vinheira Agnello</h1>
+      <h1>Vinheira Agnello</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="foto.html">Fotos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="onde.html">Como chegar</a></li>
-            <li><a href="compra.html">Compras</a></li>
-            <li><a href="login.html">Logar</a></li>
-
-        </ul>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/sobre.html">Sobre</a></li>
+        <li><a href="/pages/foto.html">Fotos</a></li>
+        <li><a href="/pages/contato.html">Contato</a></li>
+        <li><a href="/pages/compra.html">Compras</a></li>
+        <li><a href="/pages/login.html">Logar</a></li>
+      </ul>
     </nav>
     <div class="container">
-        <section>
+      <section>
+        <article id="sobre">
+          <h2>Vinheria Agnello</h2>
+          <p>
+            A Vinheria Agnello é um dos destinos mais procurados por amantes de
+            vinho na região. Localizada em um cenário pitoresco, oferece uma
+            ampla seleção de vinhos produzidos localmente, combinados com uma
+            experiência gastronômica única.
+          </p>
+          <p>
+            Além disso, a Vinheria Agnello promove eventos culturais e workshops
+            para aqueles que desejam aprofundar seus conhecimentos sobre o mundo
+            do vinho.
+          </p>
+        </article>
+        <article id="fotos">
+          <h2>Fotos</h2>
+          <img src="./imgs/vinheria.jpg" alt="Vinheira Agnello" width="50%" />
+          <p>
+            Conheça um pouco mais sobre a atmosfera única da Vinheria Agnello.
+          </p>
+        </article>
 
-            <article id="sobre">
-                <h2>Vinheria Agnello</h2>
-                <p>A Vinheria Agnello é um dos destinos mais procurados por amantes de vinho na região. Localizada em
-                    um
-                    cenário pitoresco, oferece uma ampla seleção de vinhos produzidos localmente, combinados com uma
-                    experiência gastronômica única.</p>
-                <p>Além disso, a Vinheria Agnello promove eventos culturais e workshops para aqueles que desejam
-                    aprofundar
-                    seus conhecimentos sobre o mundo do vinho.</p>
-            </article>
-            <article id="fotos">
-                <h2>Fotos</h2>
-                <img src="./imgs/vinheria.jpg" alt="Vinheira Agnello" width="50%">
-                <p>Conheça um pouco mais sobre a atmosfera única da Vinheria Agnello.</p>
-            </article>
 
-            <br>
-
-            <h2>Nossa Missão</h2>
-            <p>Nossa missão na Vinheria Agnello é proporcionar aos nossos clientes uma experiência enriquecedora,
-                onde
-                podem descobrir e desfrutar dos melhores vinhos em um ambiente acolhedor e amigável. Nosso compromisso
-                é
-                promover a cultura do vinho, compartilhando conhecimento e paixão com todos os que nos visitam.</p>
-            <br>
-
-        </section>
+        <h2>Nossa Missão</h2>
+        <p>
+          Nossa missão na Vinheria Agnello é proporcionar aos nossos clientes
+          uma experiência enriquecedora, onde podem descobrir e desfrutar dos
+          melhores vinhos em um ambiente acolhedor e amigável. Nosso compromisso
+          é promover a cultura do vinho, compartilhando conhecimento e paixão
+          com todos os que nos visitam.
+        </p>
+        <br />
+      </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Caso da Vinheira Agnello</p>
+      <p>&copy; 2024 Caso da Vinheira Agnello</p>
     </footer>
 
-    <script src="idade.js"></script>
-
-</body>
-
+    <script src="scripts/idade.js"></script>
+  </body>
 </html>
