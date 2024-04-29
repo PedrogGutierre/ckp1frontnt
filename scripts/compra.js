@@ -13,7 +13,7 @@ const criarCardProduto = (produto) => {
       <h3 class="product-title">${produto.nome}</h3>
       <p class="product-description">${produto.desc}</p>
       <p class="product-price">R$ ${produto.preco}</p>
-      <a href="/pages/produto.html?id=${produto.id}">Ir para o produto</a>
+      <a href="./pages/produto.html?id=${produto.id}">Ir para o produto</a>
     </div>
   </div> 
 `;
