@@ -4,20 +4,33 @@ Este é um projeto de website para o caso fictício da Vinheira Agnello, compost
 
 ## Estrutura do Projeto
 
-O projeto é composto pelos seguintes arquivos HTML:
+O projeto está estruturado da seguinte forma:
+
+projeto_vinheira_agnello/
+│
+├── index.html
+├── pages/
+│ ├── sobre.html
+│ ├── fotos.html
+│ ├── contato.html
+│ └── onde.html
+├── styles/
+│ └── style.css
+└── scripts/
+└── (arquivos de script)
+└── imgs/
+└── (arquivos de imagem)
+
+
+Os arquivos estão organizados da seguinte maneira:
 
 - `index.html`: Página inicial do site.
-- `sobre.html`: Página com informações sobre a Vinheira Agnello.
-- `foto.html`: Página com fotos e vídeos do local.
-- `contato.html`: Página com informações de contato.
-- `onde.html`: Página com o mapa de como chegar ao local.
-
-Além disso, há um arquivo CSS (`style.css`) que contém estilos para todo o site.
+- `pages/`: Contém as páginas adicionais do site.
+- `styles/`: Contém o arquivo CSS (`style.css`) que define os estilos para todo o site.
+- `scripts/`: Contém arquivos de script, se houver.
+- `imgs/`: Contém arquivos de imagem utilizados no site.
 
 ## Como Executar
 
-Para visualizar o site localmente, basta abrir qualquer um dos arquivos HTML em um navegador web.
+Para visualizar o site localmente, basta abrir o arquivo `index.html` em um navegador web.
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests com melhorias no código ou no conteúdo.
